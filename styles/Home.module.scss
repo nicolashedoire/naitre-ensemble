@@ -1,11 +1,26 @@
+@import './colors.scss';
+
 .header {
   padding: 0 .5rem;
   width: 100%;
   height: 40px;
-  background-color: #0070f3;
+  background-color: $color-tan;
   color: rgb(250, 250, 250);
   display: flex;
   align-items: center;
+}
+
+.menu {
+  margin-right: 25px;
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    li{
+      margin: 5px;
+      color: $color-beige;
+    }
+  }
 }
 
 .container {
