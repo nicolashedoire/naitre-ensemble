@@ -1,19 +1,15 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.header {
+  padding: 0 .5rem;
+  width: 100%;
+  height: 40px;
+  background-color: #0070f3;
+  color: rgb(250, 250, 250);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  min-height: 100vh;
 }
 
 .footer {
