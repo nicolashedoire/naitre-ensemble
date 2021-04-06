@@ -14,6 +14,7 @@
   background-color: $color-cream;
   padding: 1rem 1rem;
   ul{
+    cursor: pointer;
     margin: 0;
     list-style-type: none;
     display: flex;
@@ -26,8 +27,33 @@
   }
 }
 
+.presentation {
+  padding: 1.5rem;
+
+  p{
+    font-style: normal;
+    text-align: justify;
+    letter-spacing: .1rem;
+  }
+}
+
 .container {
   min-height: 100vh;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: $color-cream;
+  padding: 10px;
+
+  > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 }
 
 .footer {
@@ -37,10 +63,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
 }
 
 .footer a {
@@ -63,34 +85,14 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 1.8rem;
+  padding: 15px;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
 .grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
   margin-top: 3rem;
 }
 
@@ -124,9 +126,6 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-}
 
 @media (max-width: 600px) {
   .grid {
