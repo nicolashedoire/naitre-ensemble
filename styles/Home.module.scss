@@ -11,14 +11,17 @@
 }
 
 .menu {
-  margin-right: 25px;
+  background-color: $color-cream;
+  padding: 1rem 1rem;
   ul{
+    margin: 0;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     li{
       margin: 5px;
       color: $color-beige;
+      font-weight: 800;
     }
   }
 }

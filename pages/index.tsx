@@ -16,7 +16,7 @@ export default function Home() {
           <PhoneIcon style={{ marginLeft: "10px", marginRight: "2px" }} />
           <span>06 44 76 55 88</span>
           <MailIcon style={{ marginLeft: "10px", marginRight: "2px" }} />
-          <span>contact@gmail.com</span>
+          <span>leslierichardn@gmail.com</span>
         </header>
         <div className={styles.menu}>
           <ul>
