@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.scss";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import ContactForm from "../forms/contactForm";
+import Button from "@material-ui/core/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.presentation}>
-          <h1 className={styles.title}>Mon savoir faire</h1>
+          <h1 className={styles.title}>Qui suis-je ?</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
             architecto quis voluptatem corporis eius. Fuga enim eveniet quam
@@ -64,12 +66,72 @@ export default function Home() {
             quam amet alias, itaque rem iusto hic laborum? Corrupti perferendis
             dolorum amet quidem ullam nam fugit quisquam.
           </p>
-          <h1 className={styles.title}>Mes offres</h1>
+          <h1 className={styles.title}>Les ateliers</h1>
           <div className={styles.gridContainer}>
-            <div className={styles.card}>Offre 1</div>
-            <div className={styles.card}>Offre 2</div>
-            <div className={styles.card}>Offre 3</div>
-            <div className={styles.card}>Offre 4</div>
+            <div className={styles.card}>
+              <h3>Titre</h3>
+              <div>
+                <Image
+                  src="/massage-bebe-vignette-300x300.png"
+                  height={144}
+                  width={144}
+                  alt="Atelier 2"
+                />
+              </div>
+              <div className="mt25">
+                <Button variant="outlined" color="default" disableElevation>
+                  Voir détails
+                </Button>
+              </div>
+            </div>
+            <div className={styles.card}>
+            <h3>Titre</h3>
+              <div>
+                <Image
+                  src="/massage-bebe-vignette-300x300.png"
+                  height={144}
+                  width={144}
+                  alt="Atelier 2"
+                />
+              </div>
+              <div className="mt25">
+                <Button variant="outlined" color="default" disableElevation>
+                  Voir détails
+                </Button>
+              </div>
+            </div>
+            <div className={styles.card}>
+            <h3>Titre</h3>
+              <div>
+                <Image
+                  src="/massage-bebe-vignette-300x300.png"
+                  height={144}
+                  width={144}
+                  alt="Atelier 2"
+                />
+              </div>
+              <div className="mt25">
+                <Button variant="outlined" color="default" disableElevation>
+                  Voir détails
+                </Button>
+              </div>
+            </div>
+            <div className={styles.card}>
+            <h3>Titre</h3>
+              <div>
+                <Image
+                  src="/massage-bebe-vignette-300x300.png"
+                  height={144}
+                  width={144}
+                  alt="Atelier 2"
+                />
+              </div>
+              <div className="mt25">
+                <Button variant="outlined" color="default" disableElevation>
+                  Voir détails
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.grid}>
